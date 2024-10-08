@@ -6,7 +6,7 @@ import { client, urlFor } from '../../../lib/client';
 import { Product } from '../../../components';
 import { useStateContext } from '../../../context/StateContext';
 
-const ProductDetails = ({ params }: { params: { slug: string } }) => {
+const ProductDetails = ({ params }) => {
   const [product, setProduct] = useState(null);
   const [products, setProducts] = useState([]);
   const [index, setIndex] = useState(0);
