@@ -43,7 +43,7 @@ export async function POST(req: Request) {
         };
       }),
       success_url: `${req.headers.get('origin')}/success`,
-      cancel_url: `${req.headers.get('origin')}/canceled`,
+      cancel_url: `${req.headers.get('origin')}/`,
     };
 
     // Create Checkout Session from body params
